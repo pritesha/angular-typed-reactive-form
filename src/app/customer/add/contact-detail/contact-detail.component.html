@@ -1,0 +1,58 @@
+<div class="form-group" [ngClass]="{'form-group-invalid' : !email.valid && (email.touched || email.dirty) }">
+    <label for="e-mail">Email</label>
+    <input id="e-mail" type="text" class="form-control" [formControl]="email">
+    <span class="form-control-invalid">
+        Valid email required
+    </span>
+</div>
+<div class="form-group" [ngClass]="{'form-group-invalid' : !phone.valid && (phone.touched || phone.dirty) }">
+    <label for="phone-no">Phone</label>
+    <input id="phone-no" type="text" class="form-control" [formControl]="phone">
+    <span class="form-control-invalid">
+        Phone number is required
+    </span>
+</div>
+<div class="form-group"
+    [ngClass]="{'form-group-invalid' : !addressLine1.valid && (addressLine1.touched || addressLine1.dirty) }">
+    <label for="address-line1">Address line 1</label>
+    <input id="address-line1" type="text" class="form-control" [formControl]="addressLine1">
+    <span class="form-control-invalid">
+        Address is required
+    </span>
+</div>
+<div class="form-group">
+    <label for="address-line2">Address Line 2</label>
+    <input id="address-line2" type="text" class="form-control" [formControl]="addressLine2">
+</div>
+<div class="form-group"
+    [ngClass]="{'form-group-invalid' : !postcode.valid && (postcode.touched || postcode.dirty) }">
+    <label for="post-code">Postcode</label>
+    <input id="post-code" type="text" class="form-control" [formControl]="postcode">
+    <span class="form-control-invalid">
+        Postcode is required
+    </span>
+</div>
+<div class="form-group"
+    [ngClass]="{'form-group-invalid' : !city.valid && (city.touched || city.dirty) }">
+    <label for="cityid">City</label>
+    <input id="cityid" type="text" class="form-control" [formControl]="city">
+    <span class="form-control-invalid">
+        City is required
+    </span>
+</div>
+<div class="form-group"
+    [ngClass]="{'form-group-invalid' : !state.valid && (state.touched || state.dirty) }">
+    <label for="stateid">State</label>
+    <input id="stateid" type="text" class="form-control" [formControl]="state">
+    <span class="form-control-invalid">
+        State is required
+    </span>
+</div>
+<div class="form-group"
+    [ngClass]="{'form-group-invalid' : !country.valid && (country.touched || country.dirty) }">
+    <label for="countryid">Country</label>
+    <input id="countryid" type="text" class="form-control" [formControl]="country">
+    <span class="form-control-invalid">
+        Country is required
+    </span>
+</div>

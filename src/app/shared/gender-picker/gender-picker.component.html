@@ -1,0 +1,6 @@
+<label>gender</label>
+<select id="g" class="form-control" [formControl]="gender">
+  <option *ngFor="let g of genders" [value]="g.id">
+    {{ g.title }}
+  </option>
+</select>

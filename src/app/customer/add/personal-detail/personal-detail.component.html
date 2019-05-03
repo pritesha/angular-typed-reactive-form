@@ -1,0 +1,32 @@
+<div class="form-group" [ngClass]="{'form-group-invalid' : !givenName.valid && (givenName.touched || givenName.dirty) }">
+    <label for="given-name">Given Name</label>
+    <input id="given-name" type="text" class="form-control" [formControl]="givenName">
+    <span class="form-control-invalid">
+      Given Name is required
+    </span>
+  </div>
+  <div class="form-group" [ngClass]="{'form-group-invalid' : !givenName.valid && (givenName.touched || givenName.dirty) }">
+    <label for="family-name">Family Name</label>
+    <input id="family-name" type="text" class="form-control" [formControl]="familyName">
+    <span class="form-control-invalid">
+      Family Name is required
+    </span>
+  </div>
+  <div class="form-group" [ngClass]="{'form-group-invalid' : !dateOfBirth.valid && (dateOfBirth.touched || dateOfBirth.dirty) }">
+    <div class="input-group">
+      <input class="form-control" placeholder="select a valid date of birth"
+             name="dp" [formControl]="dateOfBirth" ngbDatepicker #d="ngbDatepicker">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+      </div>
+    </div>
+    <span class="form-control-invalid">
+       Valid date of birth is required
+      </span>
+  </div>
+  <div class="form-group" [ngClass]="{'form-group-invalid' : !gender.valid && (gender.touched || gender.dirty) }">
+    <app-gender-picker [gender]="gender"></app-gender-picker>
+    <span class="form-control-invalid">
+      Please select a gender
+    </span>
+  </div>

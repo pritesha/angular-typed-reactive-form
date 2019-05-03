@@ -1,0 +1,19 @@
+.form-control-invalid {
+    display: none;
+  }
+  
+  .form-group-invalid {
+    animation-name: shakeError;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+  
+    .form-control-invalid {
+      display: block;
+      color: #d8534f;
+      padding-left: 0.5rem;
+    }
+  
+    .form-control {
+      border-color: #f57f6c;
+    }
+  }
