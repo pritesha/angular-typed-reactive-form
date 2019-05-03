@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 The reactive forms is based on  [Typed-Reactive-forms](https://ruanbeukes.net/angular-typesafe-reactive-forms/).
 
+This solutions adds intellisense, type check and binding to FormControl in reactive forms making them strogly typed.
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
