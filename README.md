@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 The reactive forms is based on  [Typed-Reactive-forms](https://ruanbeukes.net/angular-typesafe-reactive-forms/).
 
-This solutions adds intellisense, type check and binding to FormControl in reactive forms making them strogly typed.
+This solutions adds intellisense, type check and binding to FormControl in reactive forms making them strongly typed.
 
 
 
